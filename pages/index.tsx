@@ -9,6 +9,7 @@ import NextLink from "next/link";
 import Hero from "../views/hero";
 import FeaturedHouse from "../views/featuredhouse";
 import LetTour from "../views/sell";
+import AboutUs from "../views/aboutus";
 
 export default function Home() {
   return (
@@ -100,6 +101,7 @@ export default function Home() {
       <Hero />
       <FeaturedHouse />
       <LetTour></LetTour>
+      <AboutUs/>
       {/* <AboutUs></AboutUs>
       <SellingBuying></SellingBuying>
       <FindHouse></FindHouse>
