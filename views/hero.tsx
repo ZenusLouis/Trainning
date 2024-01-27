@@ -431,7 +431,7 @@ const SignIn = styled.button`
   gap: 10px;
   border-radius: 32px;
   background: var(--Green-100, #d1fae5);
-
+  border: none;
   /* Hover effect example */
   &:hover {
     background-color: #333; /* Change the background color on hover */

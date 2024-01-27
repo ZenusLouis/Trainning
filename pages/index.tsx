@@ -103,11 +103,12 @@ export default function Home() {
       </ColorBur> */}
       <Hero />
       <FeaturedHouse />
-      <LetTour/>
-      <AboutUs/>
-      <SellingBuying/>
+      <LetTour />
+      <AboutUs />
+      <SellingBuying />
       {/* <Subscribe></Subscribe> */}
-      <Footer/>
+      <Footer />
+
     </>
   );
 }
@@ -131,26 +132,13 @@ const Vector = styled.svg`
 const FirstPath = styled.path`
   fill-rule: evenodd;
   clip-rule: evenodd;
-  fill: #82F7FF;
+  fill: #82f7ff;
 `;
 
 const SecondPath = styled.path`
   fill-rule: evenodd;
   clip-rule: evenodd;
-  fill: #82FFD2;
+  fill: #82ffd2;
 `;
 
-// HeroWrapper
-
-// LetTour
-
-// AboutUs
-
-// SellingBuying
-
-// FindHouse
-
-// Subscribe
-
-// Footer
 
