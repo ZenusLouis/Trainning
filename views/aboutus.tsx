@@ -183,6 +183,7 @@ const AboutUsPart = styled.div`
   width: 2332px;
   height: 664px;
   flex-shrink: 0;
+  margin-bottom: 120px;
 `;
 // Title
 const ABTitle = styled.div`

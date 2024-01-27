@@ -238,7 +238,6 @@ const Wrapper = styled.div`
   height: 100%;
   flex-shrink: 0;
   position: relative;
-  overflow: hidden;
   justify-content: space-between;
   margin-bottom: 120px;
 `;
