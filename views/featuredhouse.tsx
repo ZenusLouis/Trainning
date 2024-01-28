@@ -95,9 +95,11 @@ export default function FeaturedHouse() {
         </FHArrow>
       </FHNav>
       <FHHouses>
+        {/* First house */}
         <FHHouse>
           <FHHouseImage>
-            <FHHouseType>
+            <FHHouseImageImg src="../../images/houses/house1.png" alt="House" />
+            <FHHouseTypePopular>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -110,14 +112,128 @@ export default function FeaturedHouse() {
                   fill="#EF4444"
                 />
               </svg>
-              <FHHouseTypeText>Popular</FHHouseTypeText>
-            </FHHouseType>
+              <FHHouseTypeTextPopular>Popular</FHHouseTypeTextPopular>
+            </FHHouseTypePopular>
           </FHHouseImage>
           <FHHouseInfo>
             <FHHouseName>Roselands House</FHHouseName>
             <FHHousePrice>$ 35.000.000</FHHousePrice>
           </FHHouseInfo>
-          
+          <FHHouseOwner>
+            <FHHouseOwnerAvatar>
+              <FHHouseOwnerAvatarImage src="../../images/avatar/user2.jpg" />
+            </FHHouseOwnerAvatar>
+            <FHHouseOwnerInfo>
+              <FHHouseOwnerName>Dianne Russell</FHHouseOwnerName>
+              <FHHouseOwnerAddress>Manchester, Kentucky</FHHouseOwnerAddress>
+            </FHHouseOwnerInfo>
+          </FHHouseOwner>
+        </FHHouse>
+        {/* Second house */}
+        <FHHouse>
+          <FHHouseImage>
+            <FHHouseImageImg src="../../images/houses/house2.png" alt="House" />
+            <FHHouseTypeNewHouse>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M14 7.22126V13C13.9999 13.1812 13.9508 13.3591 13.8579 13.5147C13.765 13.6703 13.6317 13.7979 13.4723 13.8839C13.3278 13.9622 13.1657 14.0021 13.0014 13.9999H9.99782C9.86521 13.9999 9.73803 13.9473 9.64426 13.8535C9.5505 13.7597 9.49782 13.6326 9.49782 13.4999V10.4995C9.49782 10.3669 9.44514 10.2397 9.35137 10.146C9.2576 10.0522 9.13043 9.99951 8.99782 9.99951H6.99782C6.86521 9.99951 6.73803 10.0522 6.64426 10.146C6.5505 10.2397 6.49782 10.3669 6.49782 10.4995V13.4999C6.49782 13.6326 6.44514 13.7597 6.35137 13.8535C6.2576 13.9473 6.13043 13.9999 5.99782 13.9999H3.00013C2.85836 14.0003 2.71816 13.9704 2.5889 13.9121C2.45965 13.8539 2.34434 13.7687 2.25069 13.6623C2.08631 13.4721 1.99714 13.2285 2.00001 12.9771V7.2212C2.00011 7.08187 2.02928 6.9441 2.08564 6.81669C2.142 6.68927 2.22431 6.57501 2.32732 6.4812L7.32688 1.93539C7.51053 1.76717 7.75053 1.67385 7.99957 1.67383C8.24862 1.6738 8.48864 1.76708 8.67232 1.93526L13.6728 6.48126C13.7757 6.57509 13.858 6.68935 13.9144 6.81677C13.9707 6.94418 13.9999 7.08194 14 7.22126Z"
+                  fill="#1D4ED8"
+                />
+              </svg>
+              <FHHouseTypeTextNewHouse>New house</FHHouseTypeTextNewHouse>
+            </FHHouseTypeNewHouse>
+          </FHHouseImage>
+          <FHHouseInfo>
+            <FHHouseName>Woodlandside</FHHouseName>
+            <FHHousePrice>$ 20.000.000</FHHousePrice>
+          </FHHouseInfo>
+          <FHHouseOwner>
+            <FHHouseOwnerAvatar>
+              <FHHouseOwnerAvatarImage src="../../images/avatar/z5107971386247_df73c2f1583d9002af787466125fc334.jpg" />
+            </FHHouseOwnerAvatar>
+            <FHHouseOwnerInfo>
+              <FHHouseOwnerName>Robert Fox</FHHouseOwnerName>
+              <FHHouseOwnerAddress>
+                Dr. San Jose, South Dakota
+              </FHHouseOwnerAddress>
+            </FHHouseOwnerInfo>
+          </FHHouseOwner>
+        </FHHouse>
+        {/* Third house */}
+        <FHHouse>
+          <FHHouseImage>
+            <FHHouseImageImg src="../../images/houses/house3.png" alt="House" />
+            <FHHouseTypeBestDeals>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M12.8 4.79999H2.79998V4.39999L11.6 3.69599V4.39999H12.8V3.19999C12.8 2.31999 12.0872 1.70239 11.2168 1.82639L3.18398 2.97359C2.31278 3.09839 1.59998 3.91999 1.59998 4.79999V12.8C1.59998 13.2243 1.76855 13.6313 2.0686 13.9314C2.36866 14.2314 2.77563 14.4 3.19998 14.4H12.8C13.2243 14.4 13.6313 14.2314 13.9313 13.9314C14.2314 13.6313 14.4 13.2243 14.4 12.8V6.39999C14.4 5.97564 14.2314 5.56868 13.9313 5.26862C13.6313 4.96856 13.2243 4.79999 12.8 4.79999ZM11.6 10.4048C11.4423 10.4047 11.2863 10.3736 11.1406 10.3133C10.995 10.2529 10.8627 10.1644 10.7513 10.0529C10.6399 9.94141 10.5515 9.80905 10.4912 9.66339C10.4309 9.51773 10.3999 9.36163 10.4 9.20399C10.4 9.04635 10.4311 8.89027 10.4915 8.74465C10.5519 8.59903 10.6403 8.46673 10.7518 8.3553C10.8634 8.24387 10.9957 8.15549 11.1414 8.09521C11.287 8.03493 11.4431 8.00394 11.6008 8.00399C11.9191 8.0041 12.2244 8.13067 12.4495 8.35586C12.6745 8.58105 12.8009 8.88642 12.8008 9.20479C12.8007 9.52315 12.6741 9.82844 12.4489 10.0535C12.2237 10.2785 11.9183 10.4049 11.6 10.4048Z"
+                  fill="#047857"
+                />
+              </svg>
+              <FHHouseTypeTextBestDeals>Best Deals</FHHouseTypeTextBestDeals>
+            </FHHouseTypeBestDeals>
+          </FHHouseImage>
+          <FHHouseInfo>
+            <FHHouseName>The Old Lighthouse</FHHouseName>
+            <FHHousePrice>$ 44.000.000</FHHousePrice>
+          </FHHouseInfo>
+          <FHHouseOwner>
+            <FHHouseOwnerAvatar>
+              <FHHouseOwnerAvatarImage src="../../images/avatar/z5107971376232_a35e7b3e5c3eb837959738e1ee6bb690.jpg" />
+            </FHHouseOwnerAvatar>
+            <FHHouseOwnerInfo>
+              <FHHouseOwnerName>Ronald Richards</FHHouseOwnerName>
+              <FHHouseOwnerAddress>Santa Ana, Illinois</FHHouseOwnerAddress>
+            </FHHouseOwnerInfo>
+          </FHHouseOwner>
+        </FHHouse>
+        {/* Last house */}
+        <FHHouse>
+          <FHHouseImage>
+            <FHHouseImageImg src="../../images/houses/house4.png" alt="House" />
+            <FHHouseTypePopular>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M13.0328 7.33118C12.7295 6.64846 12.2885 6.03568 11.7375 5.53118L11.2828 5.114C11.2674 5.10022 11.2488 5.09044 11.2287 5.08552C11.2086 5.0806 11.1876 5.0807 11.1675 5.08579C11.1475 5.09088 11.129 5.10081 11.1137 5.11472C11.0984 5.12863 11.0867 5.14609 11.0797 5.16556L10.8766 5.74837C10.75 6.114 10.5172 6.48743 10.1875 6.85462C10.1656 6.87806 10.1406 6.88431 10.1234 6.88587C10.1063 6.88743 10.0797 6.88431 10.0562 6.86243C10.0344 6.84368 10.0234 6.81556 10.025 6.78743C10.0828 5.84681 9.80156 4.78587 9.18594 3.63118C8.67656 2.67181 7.96875 1.92337 7.08437 1.4015L6.43906 1.02181C6.35469 0.971808 6.24688 1.03743 6.25156 1.13587L6.28594 1.88587C6.30937 2.39837 6.25 2.8515 6.10938 3.22806C5.9375 3.689 5.69062 4.11712 5.375 4.5015C5.15535 4.76863 4.90639 5.01024 4.63281 5.22181C3.97391 5.72832 3.43815 6.37733 3.06562 7.12025C2.69402 7.86964 2.50045 8.69471 2.5 9.53118C2.5 10.2687 2.64531 10.9827 2.93281 11.6562C3.21042 12.3046 3.61103 12.893 4.1125 13.389C4.61875 13.889 5.20625 14.2827 5.86094 14.5562C6.53906 14.8406 7.25781 14.9843 8 14.9843C8.74219 14.9843 9.46094 14.8406 10.1391 14.5577C10.7921 14.2859 11.386 13.8895 11.8875 13.3906C12.3938 12.8906 12.7906 12.3062 13.0672 11.6577C13.3543 10.9861 13.5015 10.2631 13.5 9.53274C13.5 8.77024 13.3438 8.02962 13.0328 7.33118Z"
+                  fill="#EF4444"
+                />
+              </svg>
+              <FHHouseTypeTextPopular>Popular</FHHouseTypeTextPopular>
+            </FHHouseTypePopular>
+          </FHHouseImage>
+          <FHHouseInfo>
+            <FHHouseName>Cosmo&apos;s House</FHHouseName>
+            <FHHousePrice>$ 22.000.000</FHHousePrice>
+          </FHHouseInfo>
+          <FHHouseOwner>
+            <FHHouseOwnerAvatar>
+              <FHHouseOwnerAvatarImage src="../../images/avatar/z5107971365229_2a8374ca093303cfccccd379385934d1.jpg" />
+            </FHHouseOwnerAvatar>
+            <FHHouseOwnerInfo>
+              <FHHouseOwnerName>Jenny Wilson</FHHouseOwnerName>
+              <FHHouseOwnerAddress>
+                Preston Rd. Inglewood, Maine 98380
+              </FHHouseOwnerAddress>
+            </FHHouseOwnerInfo>
+          </FHHouseOwner>
         </FHHouse>
       </FHHouses>
     </FeatureHouse>
@@ -131,10 +247,13 @@ const FeatureHouse = styled.div`
   flex-shrink: 0;
 
   background: #fff;
+  margin-left: 120px;
+  margin-bottom: 120px;
 `;
 const FHNav = styled.div`
   display: flex;
-  justify-content: space-between;
+  gap: 139px;
+  margin-bottom:20px;
 `;
 
 const FHTitle = styled.div`
@@ -210,7 +329,7 @@ const FHArrowButton = styled.button`
   &:first-child {
     background: var(--Neutral-300, #e0e3eb);
   }
-  &:nth-child(2){
+  &:nth-child(2) {
     margin-left: 16px;
   }
 `;
@@ -218,6 +337,7 @@ const FHHouses = styled.div`
   display: inline-flex;
   align-items: flex-start;
   gap: 40px;
+  margin-left: 50px;
 `;
 const FHHouse = styled.div`
   display: flex;
@@ -231,11 +351,17 @@ const FHHouseImage = styled.div`
   height: 382px;
   flex-shrink: 0;
   border-radius: 24px;
-  background: url("../../images/houses/house1.png"),
-    lightgray 50% / cover no-repeat;
+  background: lightgray 50% / cover no-repeat;
 `;
-const FHHouseType = styled.div`
-  position: absolute; /* Đặt vị trí tuyệt đối */
+const FHHouseImageImg = styled.img`
+  position: relative;
+  width: 340px;
+  height: 382px;
+  flex-shrink: 0;
+  border-radius: 24px;
+`;
+const FHHouseTypePopular = styled.div`
+  position: absolute;
   left: 16px;
   bottom: 16px;
   display: inline-flex;
@@ -245,8 +371,48 @@ const FHHouseType = styled.div`
   border-radius: 32px;
   background: var(--Red-100, #fee2e2);
 `;
-const FHHouseTypeText = styled.div`
+const FHHouseTypeNewHouse = styled.div`
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 32px;
+  background: var(--Blue-100, #dbeafe);
+`;
+const FHHouseTypeBestDeals = styled.div`
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 32px;
+  background: var(--Green-100, #d1fae5);
+`;
+const FHHouseTypeTextPopular = styled.div`
   color: var(--Red-500, #ef4444);
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+`;
+const FHHouseTypeTextNewHouse = styled.div`
+  color: var(--Blue-700, #1d4ed8);
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+`;
+const FHHouseTypeTextBestDeals = styled.div`
+  color: var(--Green-700, #047857);
   font-family: Lexend;
   font-size: 14px;
   font-style: normal;
@@ -281,7 +447,45 @@ const FHHousePrice = styled.div`
 `;
 const FHHouseOwner = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+`;
+const FHHouseOwnerAvatar = styled.div`
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 40px;
+`;
+const FHHouseOwnerAvatarImage = styled.img`
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 40px;
+`;
+const FHHouseOwnerInfo = styled.div`
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+  justify-content: space-between;
+`;
+const FHHouseOwnerName = styled.div`
+  align-self: stretch;
+  color: var(--Neutral-900, #0e1735);
+  font-family: Lexend;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+`;
+const FHHouseOwnerAddress = styled.div`
+  align-self: stretch;
+  color: var(--Neutral-500, #888b97);
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
 `;

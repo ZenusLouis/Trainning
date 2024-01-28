@@ -101,7 +101,7 @@ export default function Home() {
           </svg>
         </VectorColorBur>
       </ColorBur>
-      <Hero />
+      {/* <Hero /> */}
       <FeaturedHouse />
       {/* <LetTour /> */}
       {/* <AboutUs /> */}
@@ -192,7 +192,7 @@ export default function Home() {
           </svg>
         </VColor>
       </FirstVector>
-      <LetTour />
+      {/* <LetTour /> */}
       {/* <AboutUs /> */}
       <MiddleVector>
         <Vector>
