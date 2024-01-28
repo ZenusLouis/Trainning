@@ -142,7 +142,13 @@ export default function Hero() {
           </OurPartnership>
         </MainContents>
         <ImageContainer>
-          <Background src="../images/06fae8934f48f55676495873fae3c843.png" alt="..." />
+          <BackgroundContainer>
+            <Background
+              src="../images/06fae8934f48f55676495873fae3c843.png"
+              alt="..."
+            />
+            <Overlay />
+          </BackgroundContainer>
           <Vector9>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -351,6 +357,7 @@ const NavBar = styled.div`
   top: 40px;
   left: 0;
   align-items: center;
+  z-index: 1;
 `;
 
 const GroupLogo = styled.div`
@@ -490,7 +497,6 @@ const ImageContainer = styled.div`
   width: 907px;
   height: 720px;
   flex-shrink: 0;
-  z-index: -1;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -498,17 +504,16 @@ const ImageContainer = styled.div`
   justify-content: flex-end;
   align-items: flex-start;
   overflow: hidden;
-  border-radius: 0px 0px 0px 80px;
   transform: translate(20%, 0px);
-  background: linear-gradient(
-    17deg,
-    #0c1537 -6.09%,
-    rgba(12, 21, 55, 0) 32.63%
-  ),
-  lightgray -49.239px -4.186px / 124.722% 112.25% no-repeat;
+  border-radius: 0px 0px 0px 80px;
 `;
+
+const BackgroundContainer = styled.div`
+  z-index: -2;
+`;
+
 const Background = styled.img`
-  z-index: -7;
+  z-index: -2;
   transform: translate(-5.5%, 0.5%);
   margin-top: -4px;
   max-width: 907px;
@@ -518,7 +523,18 @@ const Background = styled.img`
   position: absolute;
   left: 0;
 `;
-
+const Overlay = styled.div`
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0.15) 32.63%),
+    lightgray -49.239px -4.186px / 124.722% 112.25% no-repeat;
+  mix-blend-mode: overlay;
+  z-index: 1;
+`;
 const Frame13 = styled.div`
   display: inline-flex;
   align-items: flex-start;
