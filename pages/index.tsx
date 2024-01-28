@@ -102,7 +102,7 @@ export default function Home() {
         </VectorColorBur>
       </ColorBur>
       <Hero />
-      {/* <FeaturedHouse /> */}
+      <FeaturedHouse />
       {/* <LetTour /> */}
       {/* <AboutUs /> */}
       {/* <SellingBuying /> */}
