@@ -91,114 +91,12 @@ export default function Footer() {
           <Title>Contact</Title>
           <Content>2464 Royal Ln. Mesa, New Jersey 45463</Content>
           <Content>(671) 555-0110</Content>
-          <Content>info@hounter.com</Content>
+          <Content style={{ textTransform: "none" }}>info@hounter.com</Content>
         </Contact>
-        {/* <Vector6
-          xmlns="http://www.w3.org/2000/svg"
-          width="1000"
-          height="1000"
-          viewBox="0 0 760 542"
-          fill="none"
-        >
-          <g opacity="1" filter="url(#filter0_f_4_16)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M591.209 352.001C580.173 386.669 554.914 413.19 532.037 441.462C512.326 465.821 491.32 487.535 466.292 506.373C438.414 527.356 412.122 556.558 377.273 557.946C342.311 559.339 312.951 533.407 284.067 513.634C256.911 495.044 237.575 469.427 214.166 446.286C182.126 414.612 126.833 396.642 120.566 352.001C114.507 308.845 158.489 275.35 185.353 241.061C209.162 210.671 235.738 183.755 268.438 163.262C302.015 142.219 338.082 115.019 377.273 120.785C416.401 126.54 433.038 176.499 469.088 192.779C511.116 211.758 573.755 185.58 601.836 222.192C628.703 257.222 604.604 309.919 591.209 352.001Z"
-              fill="#B9FF82"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_4_16"
-              x="0"
-              y="-1.14441e-05"
-              width="1000"
-              height="1000"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="60"
-                result="effect1_foregroundBlur_4_16"
-              />
-            </filter>
-          </defs>
-        </Vector6>
-        <Vector7
-          xmlns="http://www.w3.org/2000/svg"
-          width="414"
-          height="507"
-          viewBox="0 0 514 607"
-          fill="none"
-        >
-          <g opacity="1" filter="url(#filter0_f_4_15)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M591.209 352.001C580.173 386.669 554.914 413.19 532.037 441.462C512.326 465.821 491.32 487.535 466.292 506.373C438.414 527.356 412.122 556.558 377.273 557.946C342.311 559.339 312.951 533.407 284.067 513.634C256.911 495.044 237.575 469.427 214.166 446.286C182.126 414.612 126.833 396.642 120.566 352.001C114.507 308.845 158.489 275.35 185.353 241.061C209.162 210.671 235.738 183.755 268.438 163.262C302.015 142.219 338.082 115.019 377.273 120.785C416.401 126.54 433.038 176.499 469.088 192.779C511.116 211.758 573.755 185.58 601.836 222.192C628.703 257.222 604.604 309.919 591.209 352.001Z"
-              fill="#82BBFF"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_f_4_15"
-              x="0"
-              y="-1.14441e-05"
-              width="734"
-              height="678"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feGaussianBlur
-                stdDeviation="60"
-                result="effect1_foregroundBlur_4_15"
-              />
-            </filter>
-          </defs>
-        </Vector7> */}
       </Wrapper>
     </>
   );
 }
-
-const Vector6 = styled.svg`
-  width: 438px;
-  height: 494px;
-  transform: rotate(90deg);
-  flex-shrink: 0;
-  fill: #b9ff82;
-  opacity: 0.3;
-  filter: blur(-120px);
-  position: absolute;
-  transform: translate(205%, -5%);
-`;
-
-const Vector7 = styled.svg`
-  width: 438px;
-  height: 494px;
-  transform: rotate(90deg);
-  flex-shrink: 0;
-  fill: #82bbff;
-  opacity: 0.3;
-  filter: blur(-180px);
-  position: absolute;
-  transform: translate(255%, -20%);
-`;
 
 const Wrapper = styled.div`
   height: 180px;
@@ -208,7 +106,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   z-index: 1;
-  border: 1px solid black;
   position: relative;
   @media (max-width: 768px) {
     display: flex;
