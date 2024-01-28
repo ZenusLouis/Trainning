@@ -99,25 +99,19 @@ export default function Home() {
               </filter>
             </defs>
           </svg>
-<<<<<<< HEAD
-        </Vector>
-      </ColorBur> */}
-      {/* <Hero /> */}
-      <FeaturedHouse />
+        </VectorColorBur>
+      </ColorBur>
+      <Hero />
+      {/* <FeaturedHouse /> */}
       {/* <LetTour /> */}
       {/* <AboutUs /> */}
       {/* <SellingBuying /> */}
       {/* <Subscribe/> */}
       {/* <Footer /> */}
-=======
-        </VectorColorBur>
-      </ColorBur>
-      <Hero />
-      {/* <FeaturedHouse /> */}
       <FirstVector>
         <VColor>
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"  
             width="520"
             height="678"
             viewBox="0 0 520 678"
@@ -285,8 +279,6 @@ export default function Home() {
         </Vector>
       </MiddleVector>
       <SellingBuying />
->>>>>>> 161830cc4282ce7cd848a3d0fafdc8d3f9f8541c
-
       {/* <Subscribe/> */}
       <Footer />
       <ColorFooter>
@@ -390,56 +382,52 @@ const VectorColorBur = styled.svg`
   height: 494px;
   flex-shrink: 0;
   mix-blend-mode: multiply;
+  opacity: 0.5;
+  filter: blur(60px);
 
   &:first-child {
+    fill: #82F7FF;
     left: -100px;
     top: -70px;
-    opacity: 0.5;
-    filter: blur(60px);
     transform: rotate(0deg);
   }
 
   &:last-child {
+    fill: #82FFD2;
     top: -180px;
     left: 100px;
-    opacity: 0.5;
-    filter: blur(60px);
     transform: rotate(270deg);
   }
 `;
 const FirstVector = styled.div`
   position: absolute;
-  width: 600px;
-  height: auto;
-  right: 0;
   flex-shrink: 0;
-  border: 1px solid black;
-  margin-top: -220px;
-  margin-right: -200px;
-  z-index: -10;
+  width: 688px;
+  height: 100%;
+  right: 0;
+  margin-top: -300px;
+  z-index: -3;
 `;
 
 const VColor = styled.svg`
   position: absolute;
-  width: 508px;
+  width: 438px;
   height: 494px;
   flex-shrink: 0;
-  opacity: 0.4;
+  opacity: 0.5;
   mix-blend-mode: multiply;
   filter: blur(60px);
 
   &:first-child {
-    transform: rotate(0deg);
     fill: #ff9882;
     margin-top: -40px;
-    margin-left: -100px;
+    margin-left: 150px;
   }
 
   &:last-child {
     fill: #fffa82;
-    margin-left: 160px;
-    margin-top: 240px;
-    transform: rotate(180deg);
+    margin-left: 250px;
+    margin-top: 150px;
   }
 `;
 
