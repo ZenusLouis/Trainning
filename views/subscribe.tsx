@@ -161,6 +161,7 @@ const Rec27 = styled.div`
 const SearchContainer = styled.div`
   display: flex;
   width: 496px;
+  height: 24px;
   padding: 4px 4px 4px 24px;
   align-items: center;
   gap: 16px;
@@ -190,6 +191,7 @@ const SearchEmailIcon = styled.div`
 `;
 const SearchButton = styled.button`
   display: flex;
+  height: 16px;
   padding: 12px 16px;
   align-items: center;
   gap: 4px;

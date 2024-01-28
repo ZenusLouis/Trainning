@@ -101,13 +101,13 @@ export default function Home() {
           </svg>
         </Vector>
       </ColorBur> */}
-      <Hero />
-      {/* <FeaturedHouse /> */}
-      <LetTour />
+      {/* <Hero /> */}
+      <FeaturedHouse />
+      {/* <LetTour /> */}
       {/* <AboutUs /> */}
-      <SellingBuying />
-      <Subscribe/>
-      <Footer />
+      {/* <SellingBuying /> */}
+      {/* <Subscribe/> */}
+      {/* <Footer /> */}
 
     </>
   );
