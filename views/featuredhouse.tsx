@@ -243,7 +243,7 @@ export default function FeaturedHouse() {
 // FeaturedHouse
 const FeatureHouse = styled.div`
   position: relative;
-  width: 1520px;
+  width: calc(100% - 120px);
   height: 662px;
   flex-shrink: 0;
   background: #fff;
@@ -251,6 +251,7 @@ const FeatureHouse = styled.div`
   margin-bottom: 120px;
   z-index: -1; /* Move the FeatureHouse content to the back */
   padding: 0 0 0 40px;
+  overflow: hidden;
 `;
 
 const FHNav = styled.div`
@@ -266,9 +267,8 @@ const FHTitle = styled.div`
 `;
 const FHTitleRemind = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 190px;
+  width: 101%;
   height: 18px;
   flex-shrink: 0;
   margin-left: -40px;
@@ -284,7 +284,7 @@ const FHTitleRemindSpace = styled.div`
   width: 32px;
   height: 1px;
   flex-shrink: 0;
-  margin-right: 5px;
+  margin-right: 8px;
   background: var(--Yellow-500, #f59e0b);
 `;
 
@@ -346,8 +346,6 @@ const FHHouses = styled.div`
   display: inline-flex;
   align-items: flex-start;
   gap: 40px;
-  width: auto;
-  transform: translateX(5%);
 `;
 const FHHouse = styled.div`
   display: flex;
