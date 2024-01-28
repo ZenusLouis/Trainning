@@ -253,7 +253,7 @@ const FeatureHouse = styled.div`
 const FHNav = styled.div`
   display: flex;
   gap: 139px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 `;
 
 const FHTitle = styled.div`
@@ -302,6 +302,12 @@ const FHCategories = styled.div`
   gap: 32px;
 `;
 const FHCategory = styled.div`
+  color: var(--Neutral-500, #888b97);
+  font-family: Lexend;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
   display: flex;
   padding: 12px 24px;
   align-items: center;
@@ -310,6 +316,7 @@ const FHCategory = styled.div`
   border: 1px solid var(--Neutral-300, #e0e3eb);
   &:first-child {
     background: var(--Green-100, #d1fae5);
+    color: var(--Green-500, #10b981);
   }
 `;
 const FHArrow = styled.div`
