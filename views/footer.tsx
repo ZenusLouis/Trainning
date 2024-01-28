@@ -93,7 +93,7 @@ export default function Footer() {
           <Content>(671) 555-0110</Content>
           <Content>info@hounter.com</Content>
         </Contact>
-        <Vector6
+        {/* <Vector6
           xmlns="http://www.w3.org/2000/svg"
           width="1000"
           height="1000"
@@ -170,7 +170,7 @@ export default function Footer() {
               />
             </filter>
           </defs>
-        </Vector7>
+        </Vector7> */}
       </Wrapper>
     </>
   );
@@ -193,7 +193,7 @@ const Vector7 = styled.svg`
   height: 494px;
   transform: rotate(90deg);
   flex-shrink: 0;
-  fill: #82BBFF;
+  fill: #82bbff;
   opacity: 0.3;
   filter: blur(-180px);
   position: absolute;
@@ -205,18 +205,26 @@ const Wrapper = styled.div`
   flex-shrink: 0;
   margin: 120px;
   width: calc(100% - 240px);
-
   display: flex;
   justify-content: space-between;
   z-index: 1;
   border: 1px solid black;
   position: relative;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
 `;
 
 const BiO = styled.div`
   width: 320px;
   height: 180px;
   flex-shrink: 0;
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: 320px;
+  }
 `;
 
 const Logo = styled.div`
@@ -254,6 +262,7 @@ const MainTitle = styled.h2`
   opacity: 0.75;
   margin: 12px 0 24px 0;
   width: 101%;
+
 `;
 
 const Frame20 = styled.div`
@@ -285,22 +294,36 @@ const Content = styled.li`
   margin: 18px 0 0 0;
   width: 110%;
   list-style-type: none;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: 18px;
+  }
 `;
 
 const Property = styled.div`
   width: 79px;
   height: 137px;
   flex-shrink: 0;
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const Article = styled.div`
   width: 97px;
   height: 173px;
   flex-shrink: 0;
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const Contact = styled.div`
   width: 265px;
   height: 137px;
   flex-shrink: 0;
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+  }
 `;
