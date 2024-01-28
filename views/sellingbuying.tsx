@@ -385,6 +385,7 @@ const Col2Img = styled.img`
   flex-shrink: 0;
   border-radius: 16px;
   background: lightgray 50% / cover no-repeat, #c4c4c4;
+  margin-bottom: 1.5rem;
 `;
 
 const Col2Feedback = styled.div`

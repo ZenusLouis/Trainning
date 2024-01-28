@@ -310,6 +310,7 @@ const HeroWrapper = styled.div`
   flex-shrink: 0;
   position: relative;
   overflow: hidden;
+  z-index: 2;
 `;
 
 const MainContents = styled.div`
