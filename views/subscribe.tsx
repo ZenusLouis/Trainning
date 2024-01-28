@@ -47,13 +47,18 @@ export default function Subscribe() {
 }
 
 const SubscribePart = styled.div`
-  width: 1200px;
+  width: calc(100% - 240px);
   height: 312px;
   flex-shrink: 0;
   border-radius: 32px;
+  margin: 0 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 const Rec24 = styled.div`
-  width: 1200px;
+  width: 100%;
   height: 312px;
   flex-shrink: 0;
   border-radius: 32px;

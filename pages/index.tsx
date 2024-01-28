@@ -99,21 +99,10 @@ export default function Home() {
               </filter>
             </defs>
           </svg>
-<<<<<<< HEAD
-        </Vector>
-      </ColorBur> */}
-      {/* <Hero /> */}
-      <FeaturedHouse />
-      {/* <LetTour /> */}
-      {/* <AboutUs /> */}
-      {/* <SellingBuying /> */}
-      {/* <Subscribe/> */}
-      {/* <Footer /> */}
-=======
         </VectorColorBur>
       </ColorBur>
       <Hero />
-      {/* <FeaturedHouse /> */}
+      <FeaturedHouse />
       <FirstVector>
         <VColor>
           <svg
@@ -155,7 +144,7 @@ export default function Home() {
               </filter>
             </defs>
           </svg>
-        </VColor>{" "}
+        </VColor>
         <VColor>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +188,7 @@ export default function Home() {
         </VColor>
       </FirstVector>
       <LetTour />
-      {/* <AboutUs /> */}
+      <AboutUs />
       <MiddleVector>
         <Vector>
           <svg
@@ -285,9 +274,7 @@ export default function Home() {
         </Vector>
       </MiddleVector>
       <SellingBuying />
->>>>>>> 161830cc4282ce7cd848a3d0fafdc8d3f9f8541c
-
-      {/* <Subscribe/> */}
+      <Subscribe/>
       <Footer />
       <ColorFooter>
         <VectorFooter>
@@ -394,14 +381,14 @@ const VectorColorBur = styled.svg`
   filter: blur(60px);
 
   &:first-child {
-    fill: #82F7FF;
+    fill: #82f7ff;
     left: -100px;
     top: -70px;
     transform: rotate(0deg);
   }
 
   &:last-child {
-    fill: #82FFD2;
+    fill: #82ffd2;
     top: -180px;
     left: 100px;
     transform: rotate(270deg);

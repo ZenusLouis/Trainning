@@ -193,18 +193,29 @@ export default function AboutUs() {
 }
 
 const AboutUsPart = styled.div`
-  width: 2332px;
+  width: 100%;
   height: 664px;
-  flex-shrink: 0;
-  margin-bottom: 120px;
+  margin: 120px auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
+
 // Title
 const ABTitle = styled.div`
   width: 461px;
   height: 79px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 `;
-const ABTitleText = styled.div`
+
+const ABTitleText = styled.h2`
   color: var(--MRT-App-Headline, #1b1c57);
   text-align: center;
   font-family: Lexend;
@@ -213,13 +224,21 @@ const ABTitleText = styled.div`
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
+  width: 103%;
+  margin: 12px 0 0 0;
 `;
+
 const ABTitleTop = styled.div`
   width: 107px;
   height: 27px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
-const ABTitleTopText = styled.div`
+
+const ABTitleTopText = styled.p`
   color: var(--Yellow-500, #f59e0b);
   text-align: center;
   font-family: Lexend;
@@ -228,18 +247,24 @@ const ABTitleTopText = styled.div`
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
+  margin: 0;
+  width: 103%;
 `;
+
 const ABTitleTopReg = styled.div`
   width: 32px;
   height: 1px;
   flex-shrink: 0;
   background: var(--Yellow-500, #f59e0b);
+  margin-bottom: 8px;
 `;
+
 // Content
 const ABContent = styled.div`
   display: inline-flex;
   align-items: flex-start;
   gap: 56px;
+  margin-top: 40px;
 `;
 const ABContentReview = styled.div`
   width: 740px;
@@ -262,8 +287,8 @@ const ABContentReviewDetail = styled.div`
   gap: 24px;
   border-radius: 16px;
   background: #fff;
-
   box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.05);
+  transform: translate(10%, -61%);
 `;
 const ABContentReviewDetailTitle = styled.div`
   display: flex;
@@ -288,7 +313,7 @@ const ABContentReviewDetailTitleDesc = styled.div`
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 24px; /* 171.429% */
 `;
 const ABContentReviewDetailUser = styled.div`
   display: flex;
@@ -334,7 +359,7 @@ const ABContentReviewDetailUserJob = styled.div`
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; 
+  line-height: 22px;
 `;
 const ABContentReviewDetailUserStart = styled.div`
   display: flex;
@@ -353,8 +378,9 @@ const StartNumber = styled.div`
   font-weight: 600;
   line-height: 28px;
 `;
-const Pagination = styled.div`
+const Pagination = styled.svg`
   width: 56px;
   height: 8px;
   flex-shrink: 0;
+  margin-top: 32px;
 `;
