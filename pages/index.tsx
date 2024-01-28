@@ -99,7 +99,6 @@ export default function Home() {
               </filter>
             </defs>
           </svg>
-<<<<<<< HEAD
         </Vector>
       </ColorBur> */}
       {/* <Hero /> */}
@@ -109,7 +108,6 @@ export default function Home() {
       {/* <SellingBuying /> */}
       {/* <Subscribe/> */}
       {/* <Footer /> */}
-=======
         </VectorColorBur>
       </ColorBur>
       <Hero />
