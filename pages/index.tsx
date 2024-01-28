@@ -99,6 +99,17 @@ export default function Home() {
               </filter>
             </defs>
           </svg>
+<<<<<<< HEAD
+        </Vector>
+      </ColorBur> */}
+      {/* <Hero /> */}
+      <FeaturedHouse />
+      {/* <LetTour /> */}
+      {/* <AboutUs /> */}
+      {/* <SellingBuying /> */}
+      {/* <Subscribe/> */}
+      {/* <Footer /> */}
+=======
         </VectorColorBur>
       </ColorBur>
       <Hero />
@@ -274,6 +285,7 @@ export default function Home() {
         </Vector>
       </MiddleVector>
       <SellingBuying />
+>>>>>>> 161830cc4282ce7cd848a3d0fafdc8d3f9f8541c
 
       {/* <Subscribe/> */}
       <Footer />
