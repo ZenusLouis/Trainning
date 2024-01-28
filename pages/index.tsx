@@ -10,8 +10,8 @@ import Hero from "../views/hero";
 import FeaturedHouse from "../views/featuredhouse";
 import LetTour from "../views/sell";
 import SellingBuying from "../views/sellingbuying";
-
 import AboutUs from "../views/aboutus";
+import Subscribe from "../views/subscribe";
 import Footer from "../views/footer";
 
 export default function Home() {
@@ -106,7 +106,7 @@ export default function Home() {
       <LetTour />
       {/* <AboutUs /> */}
       <SellingBuying />
-      {/* <Subscribe></Subscribe> */}
+      <Subscribe/>
       <Footer />
 
     </>

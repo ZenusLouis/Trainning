@@ -175,6 +175,19 @@ export default function AboutUs() {
           </ABContentReviewDetail>
         </ABContentReview>
       </ABContent>
+      <Pagination>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56"
+          height="8"
+          viewBox="0 0 56 8"
+          fill="none"
+        >
+          <circle cx="4" cy="4" r="4" fill="#E0E3EB" />
+          <circle cx="28" cy="4" r="4" fill="#3C4563" />
+          <circle cx="52" cy="4" r="4" fill="#E0E3EB" />
+        </svg>
+      </Pagination>
     </AboutUsPart>
   );
 }
@@ -339,4 +352,9 @@ const StartNumber = styled.div`
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
+`;
+const Pagination = styled.div`
+  width: 56px;
+  height: 8px;
+  flex-shrink: 0;
 `;
