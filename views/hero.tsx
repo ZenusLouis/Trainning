@@ -64,7 +64,7 @@ export default function Hero() {
               </Link>
             </NavLink>
           </NavigationLinks>
-          <SignIn>Sign In!</SignIn>
+          <SignUp>Sign Up!</SignUp>
         </NavBar>
         <MainContents>
           <Title>
@@ -142,6 +142,7 @@ export default function Hero() {
           </OurPartnership>
         </MainContents>
         <ImageContainer>
+          <Background src="../images/06fae8934f48f55676495873fae3c843.png" alt="..." />
           <Vector9>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -418,7 +419,7 @@ const NavSvg = styled.svg`
   margin-left: 10px;
 `;
 
-const SignIn = styled.button`
+const SignUp = styled.button`
   color: var(--Green-700, #047857);
   font-family: Lexend;
   font-size: 14px;
@@ -486,21 +487,36 @@ const SearchButton = styled.button`
 `;
 
 const ImageContainer = styled.div`
+  width: 907px;
+  height: 720px;
+  flex-shrink: 0;
+  z-index: -1;
   position: absolute;
   top: 0px;
   right: 0px;
-  z-index: -1;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  width: 720px;
-  height: 720px;
-  flex-shrink: 0;
   overflow: hidden;
   border-radius: 0px 0px 0px 80px;
-  background: linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0) 32.63%),
-    url("../../images/image 6.png"),
-    lightgray -49.239px -4.186px / 124.722% 112.25% no-repeat;
+  transform: translate(20%, 0px);
+  background: linear-gradient(
+    17deg,
+    #0c1537 -6.09%,
+    rgba(12, 21, 55, 0) 32.63%
+  ),
+  lightgray -49.239px -4.186px / 124.722% 112.25% no-repeat;
+`;
+const Background = styled.img`
+  z-index: -7;
+  transform: translate(-5.5%, 0.5%);
+  margin-top: -4px;
+  max-width: 907px;
+  width: 110%;
+  max-height: 800px;
+  height: 112%;
+  position: absolute;
+  left: 0;
 `;
 
 const Frame13 = styled.div`
@@ -510,7 +526,7 @@ const Frame13 = styled.div`
   height: 104px;
   margin-bottom: 48px;
   margin-top: 568px;
-  transform: translateX(21%);
+  transform: translateX(0.7%);
 `;
 
 const Peoples = styled.div`
@@ -646,8 +662,8 @@ const Frame8Sub3 = styled(Frame8Sub)`
 `;
 
 const Vector4 = styled.svg`
-  margin-right: -309px;
-  margin-top: 208px;
+  margin-right: -353px;
+  margin-top: 206px;
   width: 39.5px;
   height: 97px;
   flex-shrink: 0;
@@ -657,7 +673,7 @@ const Vector4 = styled.svg`
 `;
 
 const Vector5 = styled.svg`
-  margin-right: 14px;
+  margin-right: 16px;
   margin-top: 368px;
   width: 42.5px;
   height: 4px;
@@ -668,7 +684,7 @@ const Vector5 = styled.svg`
 `;
 
 const Vector6 = styled.svg`
-  margin-right: 18px;
+  margin-right: 16px;
   margin-top: 368px;
   width: 12px;
   height: 4px;
@@ -679,7 +695,7 @@ const Vector6 = styled.svg`
 `;
 
 const Vector7 = styled.svg`
-  margin-right: -522px;
+  margin-right: -318px;
   margin-top: 368px;
   width: 29.5px;
   height: 4px;
@@ -689,8 +705,8 @@ const Vector7 = styled.svg`
 `;
 
 const Vector8 = styled.svg`
-  margin-right: 352px;
-  margin-top: 142px;
+  margin-right: 413px;
+  margin-top: 141.2px;
   width: 66.5px;
   height: 91.5px;
   flex-shrink: 0;
@@ -699,7 +715,7 @@ const Vector8 = styled.svg`
 `;
 
 const Vector9 = styled.svg`
-  margin-right: -490px;
+  margin-right: -553px;
   margin-top: 407px;
   width: 70px;
   height: 75px;
