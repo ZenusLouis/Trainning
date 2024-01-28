@@ -207,6 +207,14 @@ const FHHouseImage = styled.div`
   border-radius: 24px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 `;
+const FHHouseType = styled.div`
+  display: inline-flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 32px;
+  background: var(--Red-100, #fee2e2);
+`;
 const FHHouseInfo = styled.div`
   display: flex;
   flex-direction: column;
