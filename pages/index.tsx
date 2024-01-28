@@ -103,11 +103,6 @@ export default function Home() {
       </ColorBur>
       <Hero />
       <FeaturedHouse />
-      {/* <LetTour /> */}
-      {/* <AboutUs /> */}
-      {/* <SellingBuying /> */}
-      {/* <Subscribe/> */}
-      {/* <Footer /> */}
       <FirstVector>
         <VColor>
           <svg
@@ -405,8 +400,8 @@ const FirstVector = styled.div`
   width: 688px;
   height: 100%;
   right: 0;
-  margin-top: -300px;
-  z-index: -3;
+  margin-top: -200px;
+  z-index: -1;
 `;
 
 const VColor = styled.svg`
@@ -427,7 +422,7 @@ const VColor = styled.svg`
   &:last-child {
     fill: #fffa82;
     margin-left: 250px;
-    margin-top: 150px;
+    margin-top: 60px;
   }
 `;
 
