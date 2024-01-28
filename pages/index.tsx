@@ -99,14 +99,25 @@ export default function Home() {
               </filter>
             </defs>
           </svg>
+<<<<<<< HEAD
+        </Vector>
+      </ColorBur> */}
+      {/* <Hero /> */}
+      <FeaturedHouse />
+      {/* <LetTour /> */}
+      {/* <AboutUs /> */}
+      {/* <SellingBuying /> */}
+      {/* <Subscribe/> */}
+      {/* <Footer /> */}
+=======
         </VectorColorBur>
       </ColorBur>
       <Hero />
-      <FeaturedHouse />
+      {/* <FeaturedHouse /> */}
       <FirstVector>
         <VColor>
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"  
             width="520"
             height="678"
             viewBox="0 0 520 678"
@@ -188,7 +199,7 @@ export default function Home() {
         </VColor>
       </FirstVector>
       <LetTour />
-      <AboutUs />
+      {/* <AboutUs /> */}
       <MiddleVector>
         <Vector>
           <svg
@@ -274,7 +285,9 @@ export default function Home() {
         </Vector>
       </MiddleVector>
       <SellingBuying />
-      <Subscribe/>
+>>>>>>> 161830cc4282ce7cd848a3d0fafdc8d3f9f8541c
+
+      {/* <Subscribe/> */}
       <Footer />
       <ColorFooter>
         <VectorFooter>
