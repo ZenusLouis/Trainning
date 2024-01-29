@@ -16,10 +16,10 @@ export default function Subscribe() {
         <SubscribeUserImg src="../../images/avatar/z5107971376232_a35e7b3e5c3eb837959738e1ee6bb690.jpg" />
       </SubscribeUser>
       <SubscribeUser>
-        <SubscribeUserImg src="../../images/avatar/0dec5695cd46cfa87b49b53be7db200d.jpeg" />
+        <SubscribeUserImg src="../../images/avatar/user4.png" />
       </SubscribeUser>
       <SubscribeUser>
-        <SubscribeUserImg src="../../images/avatar/user4.jpg" />
+        <SubscribeUserImg src="../../images/avatar/0dec5695cd46cfa87b49b53be7db200d.jpeg" />
       </SubscribeUser>
       <SubscribeUser>
         <HouseAndThingImg
@@ -73,17 +73,13 @@ export default function Subscribe() {
 }
 
 const SubscribePart = styled.div`
+  margin: 0 120px;
   position: relative;
   display: flex;
   justify-content: center;
   height: 312px;
   width: auto;
-  margin-left: 120px;
-  margin-right: 120px;
-  background-color: #f0f0f0;
-  padding: 20px;
   flex-shrink: 0;
-  margin-left: 120px;
   border-radius: 32px;
   background: url("../../images/background/backgroundSubscribe.png"),
     lightgray 50% / cover no-repeat;
@@ -150,8 +146,8 @@ const HouseAndThingImg = styled.img`
   border: 2px solid #fff;
 `;
 const SubscribeTitle = styled.div`
-margin-top: 65px;
-  width: 30%;
+  margin-top: 65px;
+  width: 34%;
   height: 30%;
   color: var(--MRT-App-Headline, #1b1c57);
   text-align: center;
@@ -165,7 +161,6 @@ margin-top: 65px;
 const SubscribeInput = styled.div`
   position: absolute;
   bottom: 20%;
-  left: 35%;
   display: flex;
   width: 496px;
   padding: 4px 4px 4px 24px;

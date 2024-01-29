@@ -415,8 +415,8 @@ const VColor = styled.svg`
 
   &:first-child {
     fill: #ff9882;
-    margin-top: -40px;
-    margin-left: 150px;
+    margin-top: -50px;
+    margin-left: 200px;
   }
 
   &:last-child {
