@@ -311,6 +311,10 @@ const HeroWrapper = styled.div`
   position: relative;
   overflow: hidden;
   z-index: 2;
+  @media (max-width: 768px) {
+    margin: 0;
+    width: 100%;
+  }
 `;
 
 const MainContents = styled.div`
@@ -322,6 +326,11 @@ const MainContents = styled.div`
   width: 100%;
   max-width: 496px;
   height: 446px;
+  @media (max-width: 768px) {
+    margin: 60px 0 32px 0;
+    max-width: none;
+    width: 100%;
+  }
 `;
 const Title = styled.div`
   display: flex;
@@ -359,6 +368,10 @@ const NavBar = styled.div`
   left: 0;
   align-items: center;
   z-index: 1;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 16px;
+  }
 `;
 
 const GroupLogo = styled.div`

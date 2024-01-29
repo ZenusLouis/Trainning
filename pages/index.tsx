@@ -461,8 +461,8 @@ const ColorFooter = styled.div`
   overflow: hidden;
   width: 688px;
   height: 494px;
-  margin-left: 53%;
-  margin-top: -34%;
+  margin-left: 54.7%;
+  margin-top: -32%;
 `;
 
 const VectorFooter = styled.svg`
