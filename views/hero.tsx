@@ -311,14 +311,18 @@ const HeroWrapper = styled.div`
   position: relative;
   overflow: hidden;
   z-index: 2;
-  @media (max-width: 768px) {
-    margin: 0;
-    width: 100%;
+  @media (max-width: 1400px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    margin-bottom: 120px;
   }
 `;
 
 const MainContents = styled.div`
-  margin: 182px 0 92px 0;
+  margin: 10% 0 5% 0; /* Sử dụng % cho margin-top và margin-bottom */
   display: inline-flex;
   flex-direction: column;
   align-items: stretch;
@@ -326,17 +330,41 @@ const MainContents = styled.div`
   width: 100%;
   max-width: 496px;
   height: 446px;
-  @media (max-width: 768px) {
-    margin: 60px 0 32px 0;
-    max-width: none;
+
+  @media (max-width: 1400px) {
+    margin-top: calc(30% + 2rem);
     width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: calc(30% + 2rem);
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 50%;
+  }
+
+  @media (max-width: 576px) {
+    margin-top: 80%;
+  }
+
+  @media (max-width: 368px) {
+    margin-top: 100%;
   }
 `;
+
 const Title = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
+  @media (max-width: 1400px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const Heading = styled.h1`
@@ -349,6 +377,10 @@ const Heading = styled.h1`
   text-transform: capitalize;
   width: 496px;
   margin: 0;
+  @media (max-width: 1400px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const Color = styled.span`
@@ -368,9 +400,9 @@ const NavBar = styled.div`
   left: 0;
   align-items: center;
   z-index: 1;
-  @media (max-width: 768px) {
+  @media (max-width: 1400px) {
     width: 100%;
-    padding: 0 16px;
+    display: grid;
   }
 `;
 
@@ -407,6 +439,10 @@ const NavigationLinks = styled.div`
   text-align: center;
   margin-left: auto;
   margin-right: 56px;
+  @media (max-width: 1400px) {
+    width: 100%;
+    display: inline-block;
+  }
 `;
 
 const NavLink = styled.a`
@@ -459,6 +495,9 @@ const SignUp = styled.button`
     background-color: #333; /* Change the background color on hover */
     color: #fff; /* Change the text color on hover */
   }
+  @media (max-width: 1400px) {
+    width: 108px;
+  }
 `;
 const SearchContainer = styled.div`
   display: flex;
@@ -474,6 +513,10 @@ const SearchContainer = styled.div`
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+  }
+  @media (max-width: 1400px) {
+    width: 100%;
+    height: 100%;
   }
 `;
 
@@ -520,6 +563,9 @@ const ImageContainer = styled.div`
   overflow: hidden;
   transform: translate(20%, 0px);
   border-radius: 0px 0px 0px 80px;
+  @media (max-width: 1400px) {
+    display: none;
+  }
 `;
 
 const BackgroundContainer = styled.div`
@@ -544,7 +590,11 @@ const Overlay = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0.15) 32.63%),
+  background: linear-gradient(
+      17deg,
+      #0c1537 -6.09%,
+      rgba(12, 21, 55, 0.15) 32.63%
+    ),
     lightgray -49.239px -4.186px / 124.722% 112.25% no-repeat;
   mix-blend-mode: overlay;
   z-index: 1;
@@ -589,6 +639,10 @@ const Paragraph = styled.p`
   opacity: 0.75;
   margin: 0;
   width: 110%;
+  @media (max-width: 1400px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 const OurPartnership = styled.div`
   width: 427px;
@@ -610,14 +664,16 @@ const Frame9 = styled.div`
   gap: 32px;
   height: 64px;
   flex: 1 0 0;
-  //   background: lightgray 50% / contain no-repeat;
   width: 100%;
+  @media (max-width: 1400px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const PartnerLogo = styled.img`
   height: 64px;
   flex: 1 0 0;
-  //   background: lightgray 50% / contain no-repeat;
 `;
 
 const Group7 = styled.div`

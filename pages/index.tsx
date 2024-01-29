@@ -17,6 +17,7 @@ import Footer from "../views/footer";
 export default function Home() {
   return (
     <>
+    <Main>
       <ColorBur>
         <VectorColorBur>
           <svg
@@ -360,9 +361,17 @@ export default function Home() {
           </svg>
         </VectorFooter>
       </ColorFooter>
+      </Main>
     </>
   );
 }
+
+const Main = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+`;
 
 const ColorBur = styled.div`
   position: absolute;
@@ -399,6 +408,7 @@ const FirstVector = styled.div`
   flex-shrink: 0;
   width: 688px;
   height: 100%;
+  left: auto;
   margin-left: 53%;
   margin-top: -17%;
   z-index: -1;
@@ -416,12 +426,12 @@ const VColor = styled.svg`
   &:first-child {
     fill: #ff9882;
     margin-top: -50px;
-    margin-left: 200px;
+    right: 0;
   }
 
   &:last-child {
     fill: #fffa82;
-    margin-left: 250px;
+    right: 0;
     margin-top: 60px;
   }
 `;
@@ -461,7 +471,7 @@ const ColorFooter = styled.div`
   overflow: hidden;
   width: 688px;
   height: 494px;
-  margin-left: 54.7%;
+  right: 0;
   margin-top: -32%;
 `;
 

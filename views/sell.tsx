@@ -162,10 +162,14 @@ export default function LetTour() {
         </Information>
         <ImageContainer>
           <Rectangle17>
-            <Img17
-              src="../../images/houses/1201dcd42c65b4db672ce5b3b060e8f8.png"
-              alt="..."
-            />
+            <BackgroundContainer>
+              <Img17
+                src="../../images/houses/1201dcd42c65b4db672ce5b3b060e8f8.png"
+                alt="..."
+              />
+              <Overlay />
+            </BackgroundContainer>
+
             <PlayIconSvg
               xmlns="http://www.w3.org/2000/svg"
               width="48"
@@ -217,11 +221,11 @@ export default function LetTour() {
             src="../images/furniture/8fd947b8be5ed1c26a9b6a162fd3b28c.jpeg"
             alt="..."
           />
-          <Img19
+          <Img19_20
             src="../images/furniture/b90888e4542b00c1610805f215e1c4df.jpeg"
             alt="..."
           />
-          <Img20
+          <Img19_20
             src="../images/furniture/8016eb8e3039eb495be659f80a051176.jpeg"
             alt="..."
           />
@@ -240,6 +244,11 @@ const Wrapper = styled.div`
   position: relative;
   justify-content: space-between;
   margin-bottom: 120px;
+  @media (max-width: 1400px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -249,6 +258,7 @@ const ImageContainer = styled.div`
 `;
 
 const Rectangle17 = styled.div`
+  overflow: hidden;
   position: relative;
   width: 488px;
   height: 416px;
@@ -256,19 +266,38 @@ const Rectangle17 = styled.div`
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
+`;
+const BackgroundContainer = styled.div`
+  z-index: -1;
+  position: relative;
 `;
 
 const Img17 = styled.img`
-  width: 488px;
-  height: 416px;
-  flex-shrink: 0;
-  border-radius: 4px;
+  max-width: 1050px;
+  max-height: 700px;
+  width: 130%;
+  height: 100%;
+  margin-left: -74px;
+  position: relative;
+  z-index: 1;
+`;
+
+const Overlay = styled.div`
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 0.2) 100%
     ),
     lightgray 50% / cover no-repeat;
+  mix-blend-mode: multiply;
+  z-index: 1;
 `;
 
 const Img18 = styled.img`
@@ -282,7 +311,7 @@ const Img18 = styled.img`
   margin-right: 12px;
 `;
 
-const Img19 = styled.img`
+const Img19_20 = styled.img`
   position: absolute;
   width: 96px;
   height: 80px;
@@ -290,20 +319,10 @@ const Img19 = styled.img`
   border-radius: 4px;
   background: lightgray 50% / cover no-repeat;
   bottom: 0;
-  right: 0;
-  margin-right: 124px;
-`;
-
-const Img20 = styled.img`
-  position: absolute;
-  width: 96px;
-  height: 80px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  background: lightgray 50% / cover no-repeat;
-  bottom: 0;
-  right: 0;
-  margin-right: 20px;
+  margin-left: 308px;
+  &:last-child {
+    margin-left: 412px;
+  }
 `;
 
 const PlayIconSvg = styled.svg`
@@ -320,6 +339,9 @@ const Information = styled.div`
   width: 522px;
   height: 404px;
   flex-shrink: 0;
+  @media (max-width: 1400px) {
+    margin-bottom: 40px;
+  }
 `;
 
 const MainContents = styled.div`

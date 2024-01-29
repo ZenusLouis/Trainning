@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Lexend';
-  src: url('/fonts/Lexend-Regular.woff') format('woff'),
-       url('/fonts/Lexend-Medium.woff') format('woff'),
-       url('/fonts/Lexend-Bold.woff') format('woff'),
-       url('/fonts/Lexend-ExtraBold.woff') format('woff'),
-       url('/fonts/Lexend-ExtraLight.woff') format('woff'),
-       url('/fonts/Lexend-Light.woff') format('woff'),
-       url('/fonts/Lexend-SemiBold.woff') format('woff'),
-       url('/fonts/Lexend-Thin.woff') format('woff');
+  font-family: "Lexend";
+  src: url("/fonts/Lexend-Regular.woff") format("woff"),
+    url("/fonts/Lexend-Medium.woff") format("woff"),
+    url("/fonts/Lexend-Bold.woff") format("woff"),
+    url("/fonts/Lexend-ExtraBold.woff") format("woff"),
+    url("/fonts/Lexend-ExtraLight.woff") format("woff"),
+    url("/fonts/Lexend-Light.woff") format("woff"),
+    url("/fonts/Lexend-SemiBold.woff") format("woff"),
+    url("/fonts/Lexend-Thin.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +18,8 @@ body {
   margin: 0;
   max-width: 1920px;
   width: 100%;
-  font-family: 'Lexend', sans-serif;
+  font-family: "Lexend", sans-serif;
+  position: static;
 }
 
 a {

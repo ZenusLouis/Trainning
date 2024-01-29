@@ -181,7 +181,7 @@ const Wrapper = styled.div`
   margin: 0 120px;
   padding: 0;
   width: calc(100% - 240px);
-  height: 753px;
+  height: 100%;
   flex-shrink: 0;
   position: relative;
   margin-bottom: 120px;
@@ -270,6 +270,11 @@ const ColumnsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  @media (max-width: 1400px) {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
 `;
 
 const Columns1 = styled.div`
@@ -277,6 +282,9 @@ const Columns1 = styled.div`
   height: 524px;
   flex-shrink: 0;
   gap: 40px;
+  @media (max-width: 1400px) {
+    margin-bottom: 40px;
+  }
 `;
 
 const Frame = styled.div`
@@ -284,6 +292,9 @@ const Frame = styled.div`
   align-items: center;
   gap: 32px;
   margin-bottom: 40px;
+  @media (max-width: 1400px) {
+    width: 100%;
+  }
 `;
 
 const HouseImg = styled.img`
@@ -335,6 +346,9 @@ const Name = styled.p`
   line-height: 22px; /* 157.143% */
   margin: 0;
   flex: 1 0 0;
+  @media (max-width: 1400px) {
+    width: auto;
+  }
 `;
 
 const Comment = styled.p`
