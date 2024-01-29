@@ -399,8 +399,8 @@ const FirstVector = styled.div`
   flex-shrink: 0;
   width: 688px;
   height: 100%;
-  right: 0;
-  margin-top: -200px;
+  margin-left: 53%;
+  margin-top: -17%;
   z-index: -1;
 `;
 
@@ -461,8 +461,8 @@ const ColorFooter = styled.div`
   overflow: hidden;
   width: 688px;
   height: 494px;
-  right: 0;
-  margin-top: -495px;
+  margin-left: 53%;
+  margin-top: -34%;
 `;
 
 const VectorFooter = styled.svg`

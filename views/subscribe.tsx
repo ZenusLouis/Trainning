@@ -147,7 +147,7 @@ const HouseAndThingImg = styled.img`
 `;
 const SubscribeTitle = styled.div`
   margin-top: 65px;
-  width: 34%;
+  width: 36%;
   height: 30%;
   color: var(--MRT-App-Headline, #1b1c57);
   text-align: center;
