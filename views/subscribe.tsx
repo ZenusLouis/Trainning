@@ -208,7 +208,7 @@ const SubscribeTitle = styled.div`
     font-size: 18px;
   }
   @media only screen and (max-width: 825px) {
-    margin-top: 50px;
+    margin-top: 50px; 
     width: 40%;
     height: 35%;
   }

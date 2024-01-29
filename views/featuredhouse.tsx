@@ -243,11 +243,9 @@ export default function FeaturedHouse() {
 // FeaturedHouse
 const FeatureHouse = styled.div`
   position: relative;
-  width: calc(100% - 120px);
-  height: 662px;
+  height: 860px;
   flex-shrink: 0;
   background: #fff;
-  margin-left: 120px;
   margin-bottom: 120px;
   z-index: -1; /* Move the FeatureHouse content to the back */
   padding: 0 0 0 40px;
@@ -256,8 +254,10 @@ const FeatureHouse = styled.div`
 
 const FHNav = styled.div`
   display: flex;
-  gap: 139px;
+  justify-content: space-between;
   margin-bottom: 20px;
+  margin-left: 120px;
+  margin-right: 120px;
 `;
 
 const FHTitle = styled.div`
@@ -343,9 +343,11 @@ const FHArrowButton = styled.button`
   }
 `;
 const FHHouses = styled.div`
+  margin-left: 120px;
   display: inline-flex;
   align-items: flex-start;
-  gap: 40px;
+  gap: 60px;
+  z-index: 2;
 `;
 const FHHouse = styled.div`
   display: flex;
@@ -355,16 +357,16 @@ const FHHouse = styled.div`
 `;
 const FHHouseImage = styled.div`
   position: relative;
-  width: 340px;
-  height: 382px;
+  width: 442px;
+  height: 496px;
   flex-shrink: 0;
   border-radius: 24px;
   background: lightgray 50% / cover no-repeat;
 `;
 const FHHouseImageImg = styled.img`
   position: relative;
-  width: 340px;
-  height: 382px;
+  width: 442px;
+  height: 496px;
   flex-shrink: 0;
   border-radius: 24px;
 `;
