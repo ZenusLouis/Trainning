@@ -83,6 +83,22 @@ const SubscribePart = styled.div`
   border-radius: 32px;
   background: url("../../images/background/backgroundSubscribe.png"),
     lightgray 50% / cover no-repeat;
+  @media only screen and (max-width: 1285px) {
+    height: 300px;
+  }
+  @media only screen and (max-width: 1016px) {
+    height: 280px;
+  }
+  @media only screen and (max-width: 800px) {
+    height: 260px;
+  }
+  @media only screen and (max-width: 700px) {
+    height: 240px;
+    margin: 0 60px;
+  }
+  @media only screen and (max-width: 500px) {
+    height: 220px;
+  }
 `;
 const SubscribeUser = styled.div`
   position: absolute;
@@ -132,6 +148,34 @@ const SubscribeUser = styled.div`
     bottom: 20%;
     right: 5%;
   }
+  @media only screen and (max-width: 900px) {
+    &:first-child {
+      display: none;
+    }
+    &:nth-child(3) {
+      display: none;
+    }
+    &:nth-child(6) {
+      display: none;
+    }
+    &:nth-child(7) {
+      display: none;
+    }
+    @media only screen and (max-width: 800px) {
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(4) {
+        display: none;
+      }
+      &:nth-child(5) {
+        display: none;
+      }
+      &:nth-child(8) {
+        display: none;
+      }
+    }
+  }
 `;
 const SubscribeUserImg = styled.img`
   width: 36px;
@@ -157,6 +201,28 @@ const SubscribeTitle = styled.div`
   font-weight: 600;
   line-height: 48px;
   text-transform: capitalize;
+  @media only screen and (max-width: 1285px) {
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 1011px) {
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 825px) {
+    margin-top: 50px;
+    width: 40%;
+    height: 35%;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 600px) {
+    margin-top: 25px;
+    height: 20%;
+    width: 60%;
+  }
+  @media only screen and (max-width: 500px) {
+    margin-top: 10px;
+  }
 `;
 const SubscribeInput = styled.div`
   position: absolute;
@@ -168,9 +234,27 @@ const SubscribeInput = styled.div`
   gap: 16px;
   border-radius: 32px;
   background: #fff;
-
-  /* Shadow / Smooth */
   box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.05);
+  @media only screen and (max-width: 1285px) {
+    width: 350px;
+  }
+  @media only screen and (max-width: 1011px) {
+    width: 300px;
+  }
+  @media only screen and (max-width: 800px) {
+    width: 250px;
+    gap: 10px;
+    bottom: 30%;
+  }
+  @media only screen and (max-width: 700px) {
+    width: 250px;
+    bottom: 22%;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 200px;
+    gap: 5px;
+    bottom: 20%;
+  } 
 `;
 const SubscribeInputEmail = styled.input`
   flex: 1 0 0;
@@ -184,6 +268,9 @@ const SubscribeInputEmail = styled.input`
     font-weight: 500;
     line-height: 22px;
   }
+  @media only screen and (max-width: 500px) {
+    width: 150px;
+  }
 `;
 const SubscribeButton = styled.button`
   display: flex;
@@ -193,10 +280,34 @@ const SubscribeButton = styled.button`
   border-radius: 32px;
   border: none;
   background: var(--Green-500, #10b981);
+
   color: #fff;
   font-family: Lexend;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 22px; /* 157.143% */
+  @media only screen and (max-width: 1285px) {
+    font-size: 10px;
+    padding: 10px 14px;
+  }
+  @media only screen and (max-width: 1011px) {
+    font-size: 8px;
+    padding: 5px 10px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 1px;
+    top: 1px;
+    right: 3px;
+  }
+  @media only screen and (max-width: 800px) {
+    top: 120%;
+    right: 35%;
+    z-index: 2;
+    width: 80px;
+    height: 30px;
+  }
+  @media only screen and (max-width: 500px) {
+    right: 30%;
+  }
 `;
