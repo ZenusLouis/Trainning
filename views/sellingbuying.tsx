@@ -401,9 +401,14 @@ const DateTime = styled.p`
 
 const Columns2 = styled.div`
   margin-top: 2px;
-  width: 560px;
-  height: 480px;
+  max-width: 560px;
+  max-height: 480px;
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
+  @media (max-width: 1400px) {
+    flex-direction: column;
+  }
 `;
 
 const Col2Img = styled.img`
@@ -413,6 +418,9 @@ const Col2Img = styled.img`
   border-radius: 16px;
   background: lightgray 50% / cover no-repeat, #c4c4c4;
   margin-bottom: 1.5rem;
+  @media (max-width: 1400px) and (min-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Col2Feedback = styled.div`
