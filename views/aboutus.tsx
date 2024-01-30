@@ -266,7 +266,7 @@ const ABContent = styled.div`
   align-items: flex-start;
   gap: 56px;
   margin-top: 40px;
-  @media only screen and (max-width: 1900px) {
+  @media only screen and (max-width: 1400px) {
     flex-direction: column;
   }
   @media only screen and (max-width: 800px) {

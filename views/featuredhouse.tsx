@@ -363,24 +363,16 @@ const FHHouses = styled.div`
   align-items: flex-start;
   gap: 60px;
   z-index: 2;
-  @media only screen and (max-width: 1900px) {
+  @media only screen and (max-width: 1400px) {
     align-items: center;
     flex-grow: 1;
     margin-left: 50px;
     margin-right: 50px;
     gap: 40px;
   }
-  @media only screen and (max-width: 1550px) {
+  @media only screen and (max-width: 1200px) {
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  @media only screen and (max-width: 1285px) {
-  }
-  @media only screen and (max-width: 1011px) {
-  }
-  @media only screen and (max-width: 825px) {
-  }
-  @media only screen and (max-width: 700px) {
   }
   @media only screen and (max-width: 600px) {
     margin-left: 20px;
