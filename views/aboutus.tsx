@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-// import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
@@ -194,7 +194,6 @@ export default function AboutUs() {
 
 const AboutUsPart = styled.div`
   width: 100%;
-  height: 664px;
   margin: 120px auto;
   overflow: hidden;
   display: flex;
@@ -206,13 +205,15 @@ const AboutUsPart = styled.div`
 // Title
 const ABTitle = styled.div`
   width: 461px;
-  height: 79px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
+  @media only screen and (max-width: 500px) {
+    width: 312px;
+  }
 `;
 
 const ABTitleText = styled.h2`
@@ -261,14 +262,31 @@ const ABTitleTopReg = styled.div`
 
 // Content
 const ABContent = styled.div`
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
   gap: 56px;
   margin-top: 40px;
+  @media only screen and (max-width: 1900px) {
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 800px) {
+    margin-right: 40px;
+  }
+  @media only screen and (max-width: 700px) {
+  }
 `;
 const ABContentReview = styled.div`
   width: 740px;
   height: 505px;
+  @media only screen and (max-width: 780px) {
+    width: 30%;
+    height: 80%;
+  }
+  @media only screen and (max-width: 600px) {
+  }
+  @media only screen and (max-width: 500px) {
+
+  }
 `;
 const ABContentReviewImg = styled.img`
   width: 740px;
@@ -277,6 +295,11 @@ const ABContentReviewImg = styled.img`
   border-radius: 8px;
   opacity: 0.7;
   background: lightgray 50% / cover no-repeat, #c4c4c4;
+  @media only screen and (max-width: 780px) {
+    width: 30%;
+    height: 80%;
+    display: none;
+  }
 `;
 const ABContentReviewDetail = styled.div`
   display: flex;
@@ -289,6 +312,13 @@ const ABContentReviewDetail = styled.div`
   background: #fff;
   box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.05);
   transform: translate(10%, -61%);
+  @media only screen and (max-width: 780px) {
+    width: 412px;
+    transform: none;
+  }
+  @media only screen and (max-width: 460px) {
+    width: 312px;
+  }
 `;
 const ABContentReviewDetailTitle = styled.div`
   display: flex;
@@ -305,6 +335,13 @@ const ABContentReviewDetailTitleText = styled.div`
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
+  @media only screen and (max-width: 780px) {
+    width: 412px;
+    transform: none;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 312px;
+  }
 `;
 const ABContentReviewDetailTitleDesc = styled.div`
   width: 548px;
@@ -313,7 +350,14 @@ const ABContentReviewDetailTitleDesc = styled.div`
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  @media only screen and (max-width: 780px) {
+    width: 412px;
+    transform: none;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 312px;
+  }
 `;
 const ABContentReviewDetailUser = styled.div`
   display: flex;
@@ -321,6 +365,13 @@ const ABContentReviewDetailUser = styled.div`
   justify-content: flex-end;
   align-items: flex-end;
   gap: 24px;
+  @media only screen and (max-width: 780px) {
+    width: 412px;
+    transform: none;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 312px;
+  }
 `;
 const ABContentReviewDetailUserInfo = styled.div`
   display: flex;
@@ -383,4 +434,7 @@ const Pagination = styled.svg`
   height: 8px;
   flex-shrink: 0;
   margin-top: 32px;
+  @media only screen and (max-width: 1900px) {
+    display: none;
+  }
 `;
